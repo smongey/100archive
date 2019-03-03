@@ -1,0 +1,35 @@
+{
+    "name": "100frontend",
+    "version": "1.0.0",
+    "description": "Front End code for the 100 archive",
+    "main": "gulpfile.js",
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/core": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "autoprefixer": "^9.4.9",
+        "babel-core": "^6.26.3",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "bourbon-neat": "^1.7.4",
+        "browser-sync": "^2.26.3",
+        "cssnano": "^4.1.10",
+        "gulp": "^4.0.0",
+        "gulp-babel": "^8.0.0",
+        "gulp-connect-php": "^1.0.3",
+        "gulp-postcss": "^8.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sass-glob": "^1.0.9",
+        "gulp-sourcemaps": "^2.6.5"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "git@github.com:smongey/100archive.git",
+    "author": "",
+    "license": "ISC",
+    "browserslist": "> 0.25%, not dead",
+    "presets": [
+        "@babel/preset-env"
+    ]
+}
