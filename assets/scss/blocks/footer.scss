@@ -1,0 +1,15 @@
+footer {
+    background: white;
+    overflow: auto;
+    li {
+        display: inline-block;
+    }
+}
+
+.smallprint {
+    float: left;
+}
+
+.social {
+    float: right;
+}

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: $black;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+    &:before,
+    &:after {
+        content: "";
+        content: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.ajax {
+    min-height: 100vh;
+}
+
+a {
+    color: $black;
+}
+
+$ease: "cubic-bezier(0.57, 0.13, 0.43, 0.87)";
+
+img {
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity #{$ease} 0.3s;
+}
+img[data-src] {
+    opacity: 0;
+}
+img[data-src].loaded {
+    opacity: 1;
+}
+
+::-moz-selection {
+    background: lighten($primary, 10%);
+}
+::selection {
+    background: lighten($primary, 10%);
+}

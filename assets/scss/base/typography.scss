@@ -1,0 +1,137 @@
+// Ballinger
+@font-face {
+    font-family: $custom1;
+    // src: url(/assets/fonts/Ballinger-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: $custom1;
+    // src: url(/assets/fonts/Ballinger-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: $custom1;
+    // src: url(/assets/fonts/Ballinger-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: $custom1;
+    // src: url(/assets/fonts/Ballinger-RegularItalic.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+// Sinter
+@font-face {
+    font-family: $custom2;
+    // src: url(/assets/fonts/sinter-black-webfont.woff) format("eot");
+    // src: url(/assets/fonts/sinter-black-webfont.woff2) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: $custom2;
+    // src: url(/assets/fonts/sinter-bold-webfont.eot) format("eot");
+    // src: url(/assets/fonts/sinter-bold-webfont.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Character Styles
+// .bold {
+//     font-weight: 700;
+// }
+// .regular {
+//     font-weight: 400;
+// }
+// .italic {
+//     font-style: italic;
+// }
+// .caps {
+//     text-transform: uppercase;
+// }
+// .display {
+//     text-transform: uppercase;
+//     letter-spacing: -1px;
+// }
+
+// Paragraph Styles
+
+// Display
+.superdisplay {
+    font-family: $display;
+    font-weight: 900;
+    line-height: 0.9em;
+    @include ip(font-size, $sm, 60px, $xl, 120px);
+    @include md {
+        letter-spacing: -2px;
+    }
+}
+.display {
+    font-family: $display;
+    font-weight: 400;
+    line-height: 1.2em;
+    @include ip(font-size, $sm, 28px, $xl, 32px);
+}
+
+// Text
+.largetext {
+    font-family: $text;
+    font-size: 18px;
+    @include ip("font-size", $sm, 18px, $xl, 24px);
+    line-height: 1.25em;
+    font-weight: 400;
+}
+.text {
+    font-family: $text;
+    font-size: 16px;
+    @include ip("font-size", $sm, 16px, $xl, 18px);
+    line-height: 1.4em;
+}
+.smallcaps {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn {
+    @extend .smallcaps;
+    background: $black;
+    color: $white;
+    padding: 10px 10px 7px;
+    transition: all ease 0.3s;
+}
+
+// Defaults
+// Base Default Type
+p,
+li,
+div,
+time {
+    @extend .text;
+}
+
+a {
+    @extend .text;
+}
+
+h1 {
+    @extend .display;
+}
+
+h2 {
+    @extend .display;
+}
+
+h3 {
+    @extend .largetext;
+}
+
+h4 {
+    @extend .largetext;
+}
+
+h5 {
+    @extend .largetext;
+}

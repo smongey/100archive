@@ -1,0 +1,21 @@
+header {
+    h4 {
+        @extend .text, .smallcaps;
+    }
+    &.header {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    &_logo {
+        flex: 1;
+    }
+
+    &_nav {
+        flex: 3;
+    }
+}
+
+.menu li {
+    display: inline-block;
+}

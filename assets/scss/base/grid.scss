@@ -1,0 +1,70 @@
+@mixin wrap {
+    @include ip((padding-left, padding-right), $sm, 15px, $xl, 50px);
+    // @include inter((padding-left,padding-right), $xl, 200px, $super, 800px);
+    @include super {
+        padding-left: calc((100vw - 1600px) / 2);
+        padding-right: calc((100vw - 1600px) / 2);
+    }
+}
+
+section {
+    @include wrap();
+
+    > header {
+        padding: $gutter;
+    }
+}
+
+header > div {
+}
+
+.vspacer {
+    padding-top: $gutter * 0.8;
+    padding-bottom: $gutter * 1.5;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    // margin-left: -$gutter;
+    // margin-right: -$gutter;
+}
+
+.c2 {
+    @extend .flex;
+
+    & > div {
+        flex-basis: calc(100% / 2);
+        // padding: $gutter;
+    }
+}
+
+.c3 {
+    @extend .flex;
+
+    & > div {
+        flex-basis: calc(100% / 3);
+        padding: $gutter;
+    }
+}
+
+.c4 {
+    @extend .flex;
+
+    & > div {
+        flex-basis: calc(100% / 2);
+        @include md {
+            flex-basis: calc(100% / 4);
+        }
+        padding: $gutter;
+    }
+}
+
+.c6 {
+    @extend .flex;
+
+    & > div {
+        flex-basis: calc(100% / 6);
+        padding: $gutter;
+    }
+}

@@ -1,0 +1,46 @@
+// Variables
+
+// Colours
+$primary: rgba(255, 82, 71, 1); // Orange / Red
+$secondary: rgba(48, 240, 194, 1); // Green
+$black: #1a1a1a; // Navy dark
+$darkgrey: #c4c4c4;
+$lightgrey: #f3f3f3;
+$white: rgba(255, 255, 255, 1); // white
+
+// Media Query Breakpoints
+$xs: 480px;
+$sm: 768px;
+$md: 1024px;
+$lg: 1440px;
+$xl: 1600px;
+$super: 2000px;
+
+// Fonts
+$custom1: "Deckard";
+$custom2: "Deckard";
+
+$text: #{$custom1}, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$display: #{$custom2}, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Spacing
+
+$gutter: 2vw;
+
+// $e: all cubic-bezier(0.57, 0.13, 0.43, 0.87) 0.3s;
+// Animation / Interpolation
+// $ease: cubic-bezier(0.64, 0.04, 0.35, 1);
+
+// $trans: all #{$ease} 0.3s;
+
+.bgwhite {
+    background: $white;
+}
+
+.bggrey {
+    background: $lightgrey;
+}
+
+.bgblack {
+    background: $black;
+}
