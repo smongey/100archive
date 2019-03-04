@@ -45,11 +45,11 @@ Click here to see the (figma layouts)[https://www.figma.com/file/LnM0I7tmac9aMJP
 
 ##### Profiles
 
-– Institution (free)
-– Institution (paid)
-– Workplace (free)
-– Workplace (paid)
-– Designer (free)
-– Designer (paid)
-– Associate (free)
-– Associate (paid)
+-   Institution (free)
+-   Institution (paid)
+-   Workplace (free)
+-   Workplace (paid)
+-   Designer (free)
+-   Designer (paid)
+-   Associate (free)
+-   Associate (paid)
