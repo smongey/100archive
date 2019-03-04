@@ -20,10 +20,18 @@ setInterval(function () {
   cycleClasses($(".stack ul li:nth-child(2)"));
   cycleClasses($(".stack ul li:last-child"));
 }, 5000);
-$(document).on("mouseenter", ".stack ul li", showCaption);
+$(document).on("mouseenter", ".stack ul li", showCaption).on("click", ".burger", showMenu).on("click", ".nav_menu_close", hideMenu);
 
 function showCaption() {
   console.log($(this).data("caption"));
+}
+
+function showMenu() {
+  $(".nav_menu").addClass("active");
+}
+
+function hideMenu() {
+  $(".nav_menu").removeClass("active");
 } // const showCaption = () => {
 //     console.log($(this).data("caption"));
 // };

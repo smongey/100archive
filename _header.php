@@ -36,7 +36,11 @@
     <div class="nav_fixed">
         <ul>
             <li><a class="search" href="#">Search</a></li>
-            <li><a class="burger" href="#">Burger</a></li>
+            <li><a class="burger" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a></li>
         </ul>    
     </div>
 
