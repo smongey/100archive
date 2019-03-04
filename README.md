@@ -8,7 +8,7 @@
 
 ### Templates to code
 
-Click here to see the (figma layouts)[https://www.figma.com/file/LnM0I7tmac9aMJPDqIPcfrB6/100-Archive-09.18?node-id=0%3A1].
+Click here to see the [figma layouts](https://www.figma.com/file/LnM0I7tmac9aMJPDqIPcfrB6/100-Archive-09.18?node-id=0%3A1).
 
 ##### Global Elements
 
