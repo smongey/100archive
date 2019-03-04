@@ -1,4 +1,12 @@
 .index {
+    &_intro {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: $white;
+        overflow: hidden;
+    }
+
     &_archiveis {
         background: $black;
         @extend .vspacer;

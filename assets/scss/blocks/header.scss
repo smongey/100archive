@@ -1,21 +1,29 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    @extend .flex;
+
+    &_logo {
+        flex: 1;
+        padding: $gutter * 0.5 $gutter;
+    }
+
+    &_nav {
+        flex: 1;
+        padding: $gutter * 0.5 $gutter;
+    }
+}
+
 header {
     h4 {
         @extend .text, .smallcaps;
     }
-    &.header {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    &_logo {
-        flex: 1;
-    }
-
-    &_nav {
-        flex: 3;
-    }
 }
 
-.menu li {
-    display: inline-block;
+.menu {
+    li {
+        padding: 0 10px 0 0;
+        display: inline-block;
+    }
 }

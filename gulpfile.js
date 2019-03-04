@@ -20,6 +20,25 @@ var paths = {
     }
 };
 
+// // plugins
+// const vendorScripts = [
+//     "node_modules/jquery/dist/jquery.min.js"
+//     // "assets/scripts/vendor/bodymovin.js",
+//     // "node_modules/flickity/dist/flickity.pkgd.min.js"
+// ];
+
+// gulp.task("plugins", function() {
+//     gulp
+//         .src(vendorScripts)
+//         .pipe(babel({ presets: ["@babel/env"] }))
+//         .pipe(concat("all.js"),
+//             gulp.dest("./assets/build"),
+//             $.size()
+//         ],
+//         cb
+//     );
+// });
+
 // handle scss
 function style() {
     return (

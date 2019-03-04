@@ -10,8 +10,9 @@
     </ul>
 </footer>
 
-  <script src="#"></script> <!-- all.js – plugins etc -->
-  <script src="#"></script> <!-- app.js -->
+  <!-- <script src=""></script> all.js – plugins etc -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/build/app.js"></script> <!-- app.js -->
 
   <!-- <script id="IntercomSettingsScriptTag">
 	window.intercomSettings = {

@@ -7,7 +7,4 @@
         <li><a href="#">Events</a></li>
     </ul>
     
-    <a href="#">Search</a>
-    <a href="#">Burger</a>
-    
 </nav>

@@ -2,15 +2,15 @@
 
 <div class="wrap">
 
-    <section class="index_intro intro">
+    <section class="index_intro">
         <div class="intro_title">
-        <h2>The 100 Archive charts the past, present and future of Irish design by publishing 100 notable communication design projects, selected each year following an open call.</h2>
+        <h2>The 100 Archive charts the past, present and future of Irish design by publishing 100 notable communication design projects, selected each year following an&nbsp;open&nbsp;call.</h2>
         </div>
-        <div class="stack">
+        <div class="intro_stack stack">
             <ul>
-                <li><img src="http://placehold.it/600x400" alt=""></li>
-                <li><img src="http://placehold.it/600x400" alt=""></li>
-                <li><img src="http://placehold.it/600x400" alt=""></li>
+                <li class="one" data-caption="Crafted Report by Unthink 2016 Archive"><img src="http://placehold.it/500x325" alt=""></li>
+                <li class="two" data-caption="Something Else by Someone"><img src="http://placehold.it/500x325/333" alt=""></li>
+                <li class="three" data-caption="Another Thing by that other dude"><img src="http://placehold.it/500x325/666" alt=""></li>
             </ul>
         </div>
     </section>

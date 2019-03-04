@@ -1,0 +1,76 @@
+.nav {
+    &_fixed {
+        position: fixed;
+        z-index: 2;
+        @extend .vspacer;
+        right: $gutter;
+        ul {
+            padding: 1vw 2vw;
+        }
+        li {
+            display: inline-block;
+        }
+    }
+
+    &_search {
+        position: fixed;
+    }
+
+    &_menu {
+        position: fixed;
+        top: 0;
+        right: 0px;
+        z-index: 3;
+        min-width: 23vw;
+        padding: $gutter * 1.2;
+        padding-bottom: $gutter * 3;
+        background: $white;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        li {
+            padding-bottom: 6px;
+        }
+        ul {
+            padding-bottom: 15px;
+        }
+        &_close {
+            position: absolute;
+            display: block;
+            width: 25px;
+            height: 25px;
+            right: $gutter * 1.2;
+            &:after,
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+                width: 1px;
+                height: 60%;
+                background: $black;
+                transition: all ease 0.3s;
+            }
+            &:before {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+            &:hover {
+                &:after {
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+                &:before {
+                    opacity: 0;
+                }
+            }
+        }
+        &_join {
+            position: absolute;
+            padding: 15px;
+            background: #4adb73;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            padding-left: $gutter * 1.2;
+        }
+    }
+}

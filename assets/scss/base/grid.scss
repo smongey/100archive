@@ -7,6 +7,11 @@
     }
 }
 
+header.header {
+    @include wrap();
+    @extend .vspacer;
+}
+
 section {
     @include wrap();
 

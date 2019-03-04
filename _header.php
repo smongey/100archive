@@ -25,10 +25,42 @@
 </head>
 <body>
 	<header class="header">
-	  <div class="header_logo">
-	  	<a class="logo" href="/new">100 Archive</a>
-	  </div>
-	  <div class="header_nav">
-		<?php include($path . "_menu.php") ?>
-	  </div>
-	</header>
+        <div class="header_logo">
+            <a class="logo" href="/new">100 Archive</a>
+        </div>
+        <div class="header_nav">
+            <?php include($path . "_menu.php") ?>
+        </div>
+    </header>
+
+    <div class="nav_fixed">
+        <ul>
+            <li><a class="search" href="#">Search</a></li>
+            <li><a class="burger" href="#">Burger</a></li>
+        </ul>    
+    </div>
+
+    <div class="nav_search">
+        <input type="text">
+        <div class="nav_searchresults">
+            <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="nav_menu">
+        <a href="#" class="nav_menu_close"></a>
+        <ul>
+            <li><a href="#">Sign In</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contributors</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">How to Submit</a></li>
+        </ul>
+        <a class="nav_menu_join" href="#">Join Us</a>
+    </div>
