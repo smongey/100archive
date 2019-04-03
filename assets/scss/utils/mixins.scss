@@ -305,15 +305,14 @@
     @return $result;
 }
 
-// @mixin wrap {
-//   @include interpolate((padding-left, padding-right), $sm, 20px, $xl, 180px, $interpolateEase);
-//   @include super {
-//     padding-left: calc((100vw - 1500px) / 2);
-//     padding-right: calc((100vw - 1500px) / 2);
-//   }
-// }
 
-/// Examples in use
+
+// Examples of different interpolation types
+// References
+// https://codepen.io/MadeByMike/pen/vNrvdZ
+// will add more when I find them…
+
+
 .classic-linear {
     @include ip("font-size", 600px, 12px, 900px, 24px);
 }

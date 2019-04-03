@@ -1,3 +1,6 @@
+// Standard HTML5 reset
+// I’ve added selection text colour to this for some reason.
+
 * {
     margin: 0;
     padding: 0;
@@ -53,13 +56,11 @@ a {
     color: $black;
 }
 
-$ease: "cubic-bezier(0.57, 0.13, 0.43, 0.87)";
-
 img {
     max-width: 100%;
     height: auto;
     opacity: 1;
-    transition: opacity #{$ease} 0.3s;
+    transition: opacity ease 0.3s;
 }
 img[data-src] {
     opacity: 0;

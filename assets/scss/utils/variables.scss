@@ -18,29 +18,15 @@ $super: 2000px;
 
 // Fonts
 $custom1: "Deckard";
-$custom2: "Deckard";
 
 $text: #{$custom1}, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$display: #{$custom2}, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$display: #{$custom1}, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Spacing
 
-$gutter: 2vw;
+$gutter: 4vw;
 
-// $e: all cubic-bezier(0.57, 0.13, 0.43, 0.87) 0.3s;
+
 // Animation / Interpolation
 // $ease: cubic-bezier(0.64, 0.04, 0.35, 1);
-
 // $trans: all #{$ease} 0.3s;
-
-.bgwhite {
-    background: $white;
-}
-
-.bggrey {
-    background: $lightgrey;
-}
-
-.bgblack {
-    background: $black;
-}

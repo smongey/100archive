@@ -1,16 +1,16 @@
-<?php include('_header.php'); ?>
+<?php include('./components/_header.php'); ?>
 
 <div class="wrap">
 
     <section class="intro">
         <div class="intro_title">
-        <h2>The 100 Archive charts the past, present and future of Irish design by publishing 100 notable communication design projects, selected each year following an&nbsp;open&nbsp;call.</h2>
+            <h2>The 100 Archive charts the past, present and future of Irish design by publishing 100 notable communication design projects, selected each year following an&nbsp;open&nbsp;call.</h2>
         </div>
-        <div class="intro_stack stack">
+        <div class="stack intro_stack">
             <ul>
-                <li class="one" data-caption="Crafted Report by Unthink 2016 Archive"><img src="http://placehold.it/500x325" alt=""></li>
-                <li class="two" data-caption="Something Else by Someone"><img src="http://placehold.it/500x325/333" alt=""></li>
-                <li class="three" data-caption="Another Thing by that other dude"><img src="http://placehold.it/500x325/666" alt=""></li>
+            <li class="stack_one" data-caption="Caption A"><img src="http://placehold.it/500x325" alt=""></li>
+            <li class="stack_two" data-caption="Caption B"><img src="http://placehold.it/500x325/333" alt=""></li>
+            <li class="stack_three" data-caption="Caption C"><img src="http://placehold.it/500x325/666" alt=""></li>
             </ul>
         </div>
     </section>
@@ -118,5 +118,4 @@
     </section>
 
 </div>
-
-<?php include($path . "_footer.php") ?>
+<?php include('./components/_footer.php'); ?>

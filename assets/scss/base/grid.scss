@@ -1,75 +1,109 @@
+// Grid
+// main page wrap – determines by padding on the main wrap div.
 @mixin wrap {
+    // blend from 15px wide on mobile to 50px wide on large desktop
     @include ip((padding-left, padding-right), $sm, 15px, $xl, 50px);
-    // @include inter((padding-left,padding-right), $xl, 200px, $super, 800px);
+    
+    // anything super large cut it off at 1600 wide to stop the madness
     @include super {
         padding-left: calc((100vw - 1600px) / 2);
         padding-right: calc((100vw - 1600px) / 2);
     }
 }
 
-header.header {
-    @include wrap();
-    @extend .vspacer;
-}
-
+// default spacing and type styles for a section element
 section {
-    @include wrap();
-
-    > header {
-        padding: $gutter;
+    padding: $gutter;
+    // headers within sections
+    header {
+        padding-left: $gutter/2;
+        padding-bottom: $gutter;
+        // all h4’s that are direct children of the header
+        & > h4 {
+            @extend .smallcaps;
+        }
+    }
+    @include xl {
+        // padding: $gutter $gutter*2;
+        & > header {
+            // padding-left: $gutter;
+        }
     }
 }
 
-header > div {
-}
-
-.vspacer {
-    padding-top: $gutter * 0.8;
-    padding-bottom: $gutter * 1.5;
-}
-
+// flex so I’m not repeating myself below
 .flex {
     display: flex;
     flex-flow: row wrap;
-    // margin-left: -$gutter;
-    // margin-right: -$gutter;
 }
 
+
+// two columns
 .c2 {
     @extend .flex;
-
+    // divs that are direct children of .c2 (same for each)
     & > div {
         flex-basis: calc(100% / 2);
-        // padding: $gutter;
+        padding: 0 $gutter/2;
     }
 }
 
+// three columns
 .c3 {
     @extend .flex;
-
     & > div {
         flex-basis: calc(100% / 3);
-        padding: $gutter;
+        padding: 0 $gutter/2;
     }
 }
 
+// four columns
 .c4 {
     @extend .flex;
-
+    width: 100%;
     & > div {
         flex-basis: calc(100% / 2);
+        padding: 0 $gutter/2;
         @include md {
             flex-basis: calc(100% / 4);
         }
-        padding: $gutter;
     }
 }
 
+// six columns
 .c6 {
     @extend .flex;
-
+    justify-content: space-between;
     & > div {
         flex-basis: calc(100% / 6);
-        padding: $gutter;
+        padding: 0 $gutter/2;
+    }
+}
+
+// Grid Utility – Press 'G' to see it
+.grid {
+    position: fixed;
+    top: -$gutter;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0;
+    transition: all ease .3s;
+    &.active {
+        opacity: 1;
+    }
+    & > div {
+        &.c4 {
+            transform: translateY(-100%);
+        }
+        & > div {
+            span {
+                display: block;
+                width: 100%;
+                height: 100vh;
+                background: rgba(255,0,0,.1);
+            }
+        }
     }
 }
