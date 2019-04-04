@@ -1,0 +1,22 @@
+
+.black {
+    background: $black;
+    p, a, li, h1, h2, h3, h4, h5, h6 {
+        color: $white;
+    }   
+}
+
+.grey {
+    background: $lightgrey;
+}
+
+.ul {
+    border-bottom: 1px solid $black;
+    .black & {
+        border-bottom: 1px solid $white;
+    }
+}
+
+.right {
+    float: right;
+}

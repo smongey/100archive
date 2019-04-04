@@ -1,0 +1,17 @@
+.index {
+    &_archiveis {
+        background: $black;
+        h4,
+        p {
+            color: $white;
+        }
+        a {
+            color: $white;
+            border-bottom: 1px solid white;
+        }
+    }
+
+    &_links {
+        @extend .c4;
+    }
+}

@@ -1,0 +1,7 @@
+.btn {
+    @extend .smallcaps;
+    background: $black;
+    color: $white;
+    padding: 10px 10px 7px;
+    transition: all ease 0.3s;
+}

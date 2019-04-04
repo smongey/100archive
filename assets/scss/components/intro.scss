@@ -1,0 +1,23 @@
+.intro {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: $white;
+    overflow: hidden;
+    @include xl {
+        height: 75vh;
+    }
+    &_title {
+        position: absolute;
+        width: 43vw;
+        bottom: $gutter*2;
+        z-index: 1;
+        padding-left: $gutter/2;
+        h2 {
+            @extend .display;
+        }
+        @include xl {
+            width: 30vw;
+        }
+    }
+}

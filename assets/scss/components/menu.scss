@@ -1,0 +1,156 @@
+
+// Fixed Menu, Off-Canvas Menu & Results Menu
+.menu {
+    position: fixed;
+    z-index: 3;
+    right: $gutter;
+    display: flex;
+
+    // Burger Icon
+    &_burger {
+        position: relative;
+        display: inline-block;
+        margin-left: $gutter/3;
+        margin-top: $gutter;
+        a {
+            position: relative;
+            display: inline-block;
+            width: 27px;
+            height: 27px;
+            transform: scaleX(1) scaleY(1);
+
+        }
+        span {
+            position: absolute;
+            width: 65%;
+            height: 1px;
+            background: $black;
+            top: 25%;
+            left: 15%;
+            transition: all ease 0.3s;
+        }
+        span:nth-child(2) {
+            top: 50%;
+        }
+        span:last-child {
+            top: 75%;
+        }
+        &:hover {
+            a {
+                span {
+                    height: 1px;
+                    transform: scaleX(1.2) scaleY(1);
+                }
+                span:nth-child(2) {
+                    height: 1px;
+                    transform: scaleX(0.7);
+                }
+                span:last-child {
+                    height: 1px;
+                    transform: scaleX(1.2) scaleY(1);
+                }
+            }
+        }
+    }
+    
+    // Search Icon
+    &_search {
+        position: relative;
+        display: inline-block;
+        margin-top: $gutter;
+        a {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: transparent url("../images/search.svg") center center no-repeat;
+            text-indent: -9999px;
+        }
+    }
+
+    // Flyout Menu
+    &_menu {
+        position: fixed;
+        top: 0;
+        right: 0px;
+        z-index: 3;
+        min-width: 23vw;
+        padding: $gutter * 1.2;
+        padding-bottom: $gutter * 3;
+        padding-right: $gutter * 3;
+        background: $white;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        transform: translateY(-1%);
+        opacity: 0;
+        pointer-events: none;
+
+        transition: all ease 0.3s;
+        &.active {
+            transform: translateY(0%);
+            opacity: 1;
+            pointer-events: auto;
+        }
+        li {
+            padding-bottom: 6px;
+        }
+        ul {
+            padding-bottom: 15px;
+        }
+        &_close {
+            position: absolute;
+            display: block;
+            width: 25px;
+            height: 25px;
+            right: $gutter * 2;
+            &:after,
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+                width: 1px;
+                height: 60%;
+                background: $black;
+                transition: all ease 0.3s;
+            }
+            &:before {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+            &:hover {
+                &:after {
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+                &:before {
+                    opacity: 0;
+                }
+            }
+        }
+        &_join {
+            position: absolute;
+            padding: 15px;
+            background: #4adb73;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            padding-left: $gutter * 1.2;
+        }
+    }
+
+    // Search results listing
+    &_results {
+        position: fixed;
+        right: 0px;
+        height: 100%;
+        width: 40vw;
+        z-index: 1;
+        background: $darkgrey;
+        padding: $gutter*1.5 $gutter*2;
+        transform: translateX(calc(100% + 1px));
+        &.active {
+            
+        }
+    }
+
+}
