@@ -1,122 +1,47 @@
-<?php include('./components/_header.php'); ?>
-
-<div class="wrap">
-    <section class="intro">
-
-
-        <div class="intro_title">
-            <h2>The 10000 Archive charts the past, present and future of Irish design by publishing 100 notable communication design projects, selected each year following an&nbsp;open&nbsp;call.</h2>
-        </div>
-        <div class="stack intro_stack">
-            <ul>
-            <li class="stack_one" data-caption="Caption A"><img src="http://placehold.it/500x325" alt=""></li>
-            <li class="stack_two" data-caption="Caption B"><img src="http://placehold.it/500x325/333" alt=""></li>
-            <li class="stack_three" data-caption="Caption C"><img src="http://placehold.it/500x325/666" alt=""></li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="index_archiveis">
-        <header>
-            <h4>The Archive is…</h4>
-        </header>
-        <div class="index_links"> 
-            <div>
-                <p>An annual archive that captures important and distinctive communication design and its impact on life, society, commerce and culture.</p>
-                <a href="#">Explore the archives</a>
-            </div>
-            <div>
-                <p>A forum for ideas and activity exploring what is happening in design now and what our future holds </p>
-                <a href="#">Browse the articles</a>
-            </div>
-            <div>
-                <p>A map of the design industry in Ireland and the people, institutions and associates worldwide who support it </p>
-                <a href="#">See the map</a>
-            </div>
-            <div>
-                <p>A community led platform committed to developing, presenting and preserving Irish design </p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="articles">
-        <div class="articles_featured">
-            <header>
-                <h4>Articles</h4>
-            </header>
-            <div>
-                <?php for($x = 0; $x < 2; $x++) { ?>
-                <div class="articles_article">
-                    <a href="#">
-                        <img src="http://100archive-d95a.kxcdn.com/images/made/images/articles/5556/belfast_1_560_380_75_c1.jpg" attr="image title"/>
-                        <time>3 Mar 2019</time>
-                        <h3>Article Title<br/>Article Author</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere eius corporis blanditiis autem magnam fuga quis, culpa hic dicta.</p>
-                    </a>
-                </div>
-                <?php } ?>
-            </div>
-        </div>
-        <div class="articles_news">
-            <header>
-                <h4>News</h4>
-            </header>
-            <div>
-                <div class="articles_article">
-                    <a href="#">
-                        <img src="http://100archive-d95a.kxcdn.com/images/made/images/articles/5556/belfast_1_560_380_75_c1.jpg" attr="image title"/>
-                        <time>3 Mar 2019</time>
-                        <h3>Article Title<br/>Article Author</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere eius corporis blanditiis autem magnam fuga quis, culpa hic dicta.</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <section class="projects">
-        <header class="projects_nav">
-            <div>
-            <h4>Projects</h4>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#" class="btn">+ Submit a project</a></li>
-                    <li><a href="#">View All</a></li>
-                </ul>
-            </div>
-        </header>
-        <?php include($path . '_projects.php'); ?>
-    </section>
-
-    <section class="past">
-        <header>
-            <h4>Past Archives</h4>
-            <ul>
-                <li><a href="#">View All</a></li>
-            </ul>
-        </header>
-        <ul>
-        <!-- {exp:channel:entries channel="past_archives" status="open"} -->
-        <li><a href="{title_permalink="projects/archive"}">{title}</a></li>
-        <!-- {/exp:channel:entries}     -->
-        </ul>
-    </section>
-
-    <section class="newsletter">
-        <header>
-            <h4>Newsletter</h4>
-        </header>
-    </section>
-
-    <section class="joinus">
-        <header>
-            <h4>Newsletter</h4>
-        </header>
-    </section>
-
-</div>
-<?php include('./components/_footer.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>100archive – List of Templates</title>
+    <style>
+    * {margin:0; padding:0; box-sizing: border-box; -webkit-font-smoothing:antialiased;}
+    body {padding: 15vw 20vw; font-family: 'Deckard', Arial, sans-serif;}
+    li {list-style-type: none;margin-bottom:5px;}
+    a {color: black;}
+    h2, p {margin-bottom: 40px;}
+    .done {color: LimeGreen; }
+    </style>
+</head>
+<body>
+    <h1>100archive</h1>
+    <h2>List of Templates</h2>
+    <p>Mark completed pages with class of <span class="done">done</span></p>
+    <ul>
+        <li><a href="components.php" class="done">components</a></li>
+        <li><a href="home.php">home</a></li>
+        <li><a href="about.php"> about</a></li>
+        <li><a href="community.php">  community</a></li>
+        <li><a href="directory.php">  directory</a></li>
+        <li><a href="contributors.php">  contributors</a></li>
+        <li><a href="submit.php">  submit</a></li>
+        <li><a href="join.php">join us</a></li>
+        <li><a href="signin.php">sign in</a></li>
+        <li><a href="signup.php">sign up</a></li>
+        <li><a href="forgot-password.php">forgot password</a></li>
+        <li><a href="articles.php) "> articles</a></li>
+        <li><a href="series.php" >articles – series</a></li>
+        <li><a href="article.php" >single article</a></li>
+        <li><a href="projects.php" >current submissions</a></li>
+        <li><a href="project.php" >single project</a></li>
+        <li><a href="archives.php" >archives</a></li>
+        <li><a href="archive.php" >single archive</a></li>
+        <li><a href="archive-project.php" >single project (archived)</a></li>
+        <li><a href="institution.php" >institution</a></li>
+        <li><a href="workplace.php" >workplace</a></li>
+        <li><a href="designer.php" >designer</a></li>
+        <li><a href="associate.php" >associate</a></li>
+    </ul>
+</body>
+</html>

@@ -2,6 +2,13 @@
     @extend .smallcaps;
     background: $black;
     color: $white;
-    padding: 10px 10px 7px;
+    padding: 7px 10px 7px;
     transition: all ease 0.3s;
+
+    &-series {
+        position: absolute;
+        top: 0px;
+    }
+
 }
+

@@ -2,7 +2,7 @@
 
 
 
-    <h1>About</h1>
+    <h1>Forgot Password</h1>
     <!-- Put your components here -->
 
 

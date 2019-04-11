@@ -1,0 +1,1 @@
+<a href="#" class="btn"><?php echo $btnTitle ?></a>

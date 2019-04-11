@@ -1,3 +1,4 @@
+
 <footer>
     <ul class="smallprint">
         <li><a href="#">Privacy Policy</a></li>
@@ -11,7 +12,7 @@
 </footer>
 
 
-</div>
+</div> <!-- CLOSE #wrap -->
 
 <!-- <script src=""></script> all.js – plugins etc -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

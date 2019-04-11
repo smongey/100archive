@@ -1,0 +1,46 @@
+.thumb {
+    position: relative;
+    padding: $gutter;
+    img {
+        padding-bottom: 8px;
+        transition: all ease 0.3s;
+    }
+    // *:last-child(3) {
+    //     padding-left: 15px;
+    // }
+    time,
+    h4,
+    h3,
+    p {
+        padding-bottom: 6px;
+        transition: all ease 0.3s;
+    }
+    // time {
+    //     display: block;
+    //     // transition: all ease 0.3s;
+    // }
+    .thumb_indent {
+        padding-left: 15px;
+    }
+    .thumb_doubleindent {
+        padding-left: 30px;
+    }
+    // p {
+    //     padding-left: 30px;
+    //     transition: all ease 0.3s;
+    // }
+    &:hover {
+        img {
+            // transform: scale(1.03) translatey(-4px);
+        }
+        time {
+            // opacity: 0.5;
+        }
+        h3 {
+            transform: translateX(-15px);
+        }
+        p {
+            transform: translateX(-30px);
+        }
+    }
+}

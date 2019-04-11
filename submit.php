@@ -2,7 +2,7 @@
 
 
 
-    <h1>About</h1>
+    <h1>Submit</h1>
     <!-- Put your components here -->
 
 

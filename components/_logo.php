@@ -1,0 +1,1 @@
+            <a class="logo" href="/new">100 Archive</a>
