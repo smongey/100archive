@@ -1,0 +1,36 @@
+.filter {
+  margin-bottom: $gutter/2;
+
+  button, input {
+    @extend .text;
+    background: none;
+    border-bottom: 1px solid $black;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+
+    .black & {
+        color: $white;
+        border-bottom: 1px solid $white;
+    }
+
+    &::placeholder {
+      color: $black;
+      .black & {
+          color: $white;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  & > div {
+    padding-left: 0;
+  }
+}

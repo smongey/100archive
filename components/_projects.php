@@ -1,4 +1,4 @@
-<div class="projects_list">
+<div class="projects_list c4">
     <div class="projects_project">
         <a href="http://www.100archive.com/project/the-nature-of-things">
             <img src="http://100archive-d95a.kxcdn.com/images/made/content/images/TNoT-1_400_300_75_c1.jpg" attr="The Nature of Things">

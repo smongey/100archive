@@ -19,7 +19,7 @@
 
     // denotes range of sizes – 60 on mobile to 120 on large desktop
     @include ip(font-size, $sm, 60px, $xl, 120px);
-    
+
     // from tablet up tighten it up
     @include md {
         letter-spacing: -2px;
@@ -40,15 +40,45 @@
     line-height: 1.25em;
     font-weight: 400;
 }
+
 .text {
     font-family: $text;
     font-size: 16px;
     @include ip("font-size", $sm, 16px, $xl, 18px);
     line-height: 1.4em;
 }
+
 .smallcaps {
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+
+// Layout Augmentations
+
+.title {
+    @extend .display;
+    @extend .indent;
+    margin-bottom: $gutter;
+    margin-top: $gutter*3;
+    padding-left: 53%; // This feels like a hacky solution. The problem stems from all the nested padding accumulating. This makes it hard to align disparate page items vertically.
+
+    .black & {
+      color: white;
+    }
+}
+
+.indent {
+    margin-left: $gutter/2;
+}
+
+.text_right {
+    padding-right: $gutter*3 !important; // Narrows the text container to match designs
+}
+
+.text_two {
+    padding-left: 17vw !important; // Short term fix to align to grid
+    padding-right: $gutter*3 !important; // Narrows the text container to match designs
 }
 
 
@@ -64,6 +94,10 @@ input[type="text"] {
     background: transparent;
     border-bottom: 1px solid $black;
     &::placeholder {
-        color: $black;
+        // color: $black;
     }
+}
+
+p {
+  margin-bottom: 1.4em;
 }

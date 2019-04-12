@@ -1,3 +1,23 @@
+.project {
+
+    &_image {
+        position: absolute;
+        width: 80vw;
+        left: 20vw;
+        top: 70vh;
+        padding-left: $gutter/2;
+        background-color: lightgrey;
+        height: 900px;
+        z-index:
+
+        img {
+          width: 100%;
+        }
+    }
+}
+
+
+
 // .projects {
 //     &_nav {
 //         @extend .c2;
