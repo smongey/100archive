@@ -3,7 +3,7 @@
 @mixin wrap {
     // blend from 15px wide on mobile to 50px wide on large desktop
     @include ip((padding-left, padding-right), $sm, 15px, $xl, 50px);
-    
+
     // anything super large cut it off at 1600 wide to stop the madness
     @include super {
         padding-left: calc((100vw - 1600px) / 2);
@@ -13,7 +13,7 @@
 
 // default spacing and type styles for a section element
 section {
-    padding: $gutter;
+    padding: $gutter 0;
     // headers within sections
     header {
         padding-left: $gutter/2;
