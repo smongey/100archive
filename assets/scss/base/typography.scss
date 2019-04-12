@@ -59,9 +59,6 @@
 .title {
     @extend .display;
     @extend .indent;
-    margin-bottom: $gutter;
-    margin-top: $gutter*3;
-    padding-left: 53%; // This feels like a hacky solution. The problem stems from all the nested padding accumulating. This makes it hard to align disparate page items vertically.
 
     .black & {
       color: white;
@@ -71,16 +68,6 @@
 .indent {
     margin-left: $gutter/2;
 }
-
-.text_right {
-    padding-right: $gutter*3 !important; // Narrows the text container to match designs
-}
-
-.text_two {
-    padding-left: 17vw !important; // Short term fix to align to grid
-    padding-right: $gutter*3 !important; // Narrows the text container to match designs
-}
-
 
 
 // Defaults

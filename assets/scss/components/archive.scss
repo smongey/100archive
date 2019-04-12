@@ -1,0 +1,34 @@
+.archives {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 80px auto 100px auto;
+
+  .title {
+    grid-column: 4 / span 2;
+    grid-row: 2;
+  }
+
+  .text_two {
+    grid-column: 2 / span 1;
+    grid-row: 3;
+  }
+
+  .text_right {
+    grid-column: 4 / span 2;
+    grid-row: 3;
+  }
+
+  .filter_container {
+    grid-column: 1/ span 3;
+    grid-row: 5;
+    padding-left: $gutter/2;
+  }
+
+  .projects_container {
+    grid-column: 1/ span 6;
+    grid-row: 6;
+  }
+
+
+}
