@@ -1,8 +1,14 @@
 footer {
     background: white;
     overflow: auto;
+    position: relative;
+    clear: both;
+    display: block;
+    padding: $gutter/2;
+
     li {
         display: inline-block;
+        margin-right: 20px;
     }
 }
 
