@@ -1,0 +1,32 @@
+.strip {
+  display: grid;
+  grid-template-columns: $gutter 1fr 1fr $gutter ;
+  grid-template-rows: auto 200px;
+  height: 400px;
+
+  float: left;
+  position: relative;
+
+  &.two {
+    width: 50%;
+  }
+
+  &.join {
+    background-color: $secondary;
+  }
+
+  &.newsletter {
+    background-color: $lightgrey;
+  }
+
+  .header {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .content {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: end;
+  }
+
+}

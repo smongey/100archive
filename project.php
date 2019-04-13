@@ -21,4 +21,7 @@
 
     </section>
 
+    <?php $stripType="Newsletter"; include('./components/_strip.php'); ?>
+    <?php $stripType="Join"; include('./components/_strip.php'); ?>
+
 <?php include('./components/_footer.php'); ?>

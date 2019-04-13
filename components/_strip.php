@@ -3,18 +3,30 @@
 
 <?php if($stripType == 'Join'): ?>
 
-    <section class="strip">
-        <header>
+    <section class="strip two join">
+        <div class="header smallcaps">
             <h5>Join</h5>
-            <a href="#" class="right">View Plans</a>
-        </header>
-        <h1><a href="#">Friend</a> Designer Studio</h1>
+        </div>
+        <div class="content">
+            <p>Powered by the design community — your support allows us to keep building the 100 Archive project</p>
+        </div>
     </section>
+
+<?php elseif($stripType == 'Newsletter'): ?>
+
+        <section class="strip two newsletter">
+            <div class="header smallcaps">
+                <h5>Newsletter</h5>
+            </div>
+            <div class="content">
+                <p>Sign up to get the inside track on the project, our latest articles and upcoming events!</p>
+            </div>
+        </section>
 
 
 <?php else: ?>
 
-    <section class="strip">
+    <section class="strip two">
         <header>
             <h5>Past</h5>
             <a href="#" class="right">View All</a>
