@@ -21,6 +21,8 @@
 
     </section>
 
+    <!-- TODO: Pass institution through to projects component (if institution is the correct term) -->
+    <?php $institution="AAD"; include('./components/_projects.php'); ?>
     <?php $stripType="Newsletter"; include('./components/_strip.php'); ?>
     <?php $stripType="Join"; include('./components/_strip.php'); ?>
 

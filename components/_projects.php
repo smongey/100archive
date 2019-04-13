@@ -1,4 +1,27 @@
-<div class="projects_list c4">
+<section>
+    <header>
+      <?php if($institution): ?>
+        <!-- TODO: link to institution -->
+        <h4 class="smallcaps">More from <a href="#"><?php echo $institution ?></a></h4>
+      <?php else: ?>
+        <h4>Projects</h4>
+        <ul class="right">
+        <li>
+        <?php $btnTitle='+ Submit a Project'; include('./components/_btn.php'); ?>
+        </li>
+        <li><a href="#">View All</a></li>
+        </ul>
+      <?php endif ?>
+    </header>
+    <div class="c4">
+        <?php for($x = 0; $x < 4; $x++): ?>
+        <?php $type ='Project'; include('./components/_thumb.php'); ?>
+        <?php endfor; ?>
+    </div>
+</section>
+
+
+<!-- <div class="projects_list c4">
     <div class="projects_project">
         <a href="http://www.100archive.com/project/the-nature-of-things">
             <img src="http://100archive-d95a.kxcdn.com/images/made/content/images/TNoT-1_400_300_75_c1.jpg" attr="The Nature of Things">
@@ -78,4 +101,4 @@
             at&nbsp;Detail. Design Studio</p>
         </a>
     </div>
-</div>
+</div> -->
