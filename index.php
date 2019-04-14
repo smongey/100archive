@@ -34,10 +34,10 @@
         <li><a href="series.php" >articles – series</a></li>
         <li><a href="article.php" >single article</a></li>
         <li><a href="projects.php" >current submissions</a></li>
-        <li><a href="project.php" >single project</a></li>
-        <li><a href="archives.php" >archives</a></li>
-        <li><a href="archive.php" >single archive</a></li>
-        <li><a href="archive-project.php" >single project (archived)</a></li>
+        <li><a href="project.php" class="done">single project</a></li>
+        <li><a href="archives.php" class="done">archives</a></li>
+        <li><a href="archive.php" class="done">single archive</a></li>
+        <li><a href="archive-project.php" class="done">single project (archived)</a></li>
         <li><a href="institution.php" >institution</a></li>
         <li><a href="workplace.php" >workplace</a></li>
         <li><a href="designer.php" >designer</a></li>
