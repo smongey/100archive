@@ -13,7 +13,7 @@
         </ul>
       <?php endif ?>
     </header>
-    <div class="c4">
+    <div class="projects">
         <?php for($x = 0; $x < 4; $x++): ?>
         <?php $type ='Project'; include('./components/_thumb.php'); ?>
         <?php endfor; ?>

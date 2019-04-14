@@ -2,20 +2,43 @@
 
     <section class="archives black">
 
-      <div class="title">2017 Archive</div>
+      <div class="title">Past Archives</div>
 
-        <div class="text text_right">
-          <p>The work has been selected for inclusion in the 100 Past for 2014 either because it demonstrates: a great idea, sophistication and excellence, an honesty of intent, great craft, a current trend or a mixture of these things. As is always the case, projects which were particularly strong were those in which the designer(s) were involved in all aspects of the project and there seems to be a greater degree of involvement in strategy and content generation as our profession matures and is understood by those who commission the work we produce.</p>
-          <p class="indent">Kathryn Wilson, Slater</p>
+      <div class="text text_right">
+        <p>In order to make sense of design in Ireland now and into the future, the 100 Archive creates an annual selection of 100 examples of contemporary communication design each year, while also recording the designers, collaborators and clients who make it happen. Some of our selections are now part of the NLI Web Archive. We have archive selections from 2010 onwards, explore them here.</p>
+      </div>
+
+      <div class="archive_container">
+        <div class="archive_year">
+
+          <figure class="archive_image">
+            <a href="./archive.php"><div class="archive_title">2017</div></a>
+            <img src="" alt="">
+          </figure>
+
+          <div class="text text_right">
+            <p>2017's selection once again proves that Ireland can genuinely claim to be one of Europe's design capitols. Not one that borrows its cues from established hubs such as the UK, The Netherlands or Scandinavia, but one that has carved out its own identity within the European design landscape. There's a sophistication to ideation and warmth to craft and execution that I feel is unique to Irish design today.</p>
+            <p class="indent">
+              James Cullen
+              staat, Amsterdam
+            </p>
+          </div>
         </div>
 
-      <div class="filter_container">
-          <?php include('./components/_filter.php'); ?>
+        <div class="archive_year">
+          <figure class="archive_image">
+            <div class="archive_title">2016</div>
+            <img src="" alt="">
+          </figure>
+          <div class="text text_right">
+            <p>When we reflect back on the 100 Archive for each year I think it's as important for the selection to tell a story of where design was at in that particular year, but also what we were thinking as a society: what some of the themes and concerns were in business, in culture and in our day to day lives. </p>
+            <p class="indent">
+              Aoife Flynn, IMMA
+            </p>
+          </div>
       </div>
+    </div>
 
-      <div class="projects_container">
-        <?php $archiveYear='2017'; include('./components/_archive.php'); ?>
-      </div>
 
     </section>
 

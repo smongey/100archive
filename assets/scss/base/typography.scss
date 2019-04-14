@@ -46,6 +46,10 @@
     font-size: 16px;
     @include ip("font-size", $sm, 16px, $xl, 18px);
     line-height: 1.4em;
+    
+    .black & {
+      color: white;
+    }
 }
 
 .smallcaps {

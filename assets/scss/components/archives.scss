@@ -1,0 +1,53 @@
+.archives {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 20vh 105px auto 20vh auto;
+
+  .title {
+    grid-column: 4 / span 2;
+    grid-row: 2;
+  }
+
+  .text_right {
+    grid-column: 4 / span 2;
+    grid-row: 3;
+  }
+
+  .archive_container {
+    grid-column: 1/ span 6;
+    grid-row-start: 5;
+  }
+  .archive_year {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: $gutter*2;
+
+    .text_right {
+      grid-column: 4 / span 2;
+      grid-row: 3;
+    }
+
+    .archive_image {
+      grid-column: 1/ span 6;
+      background-color: #222222;
+      min-height: 940px;
+      margin-bottom: $gutter;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .archive_title {
+      @extend .display;
+      line-height: 940px;
+      font-size: 288px;
+      font-weight: 200;
+      text-align: center;
+      color: $white;
+    }
+
+  }
+
+}

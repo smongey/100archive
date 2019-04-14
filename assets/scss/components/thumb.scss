@@ -1,7 +1,9 @@
 .thumb {
     position: relative;
-    padding: $gutter;
+    // padding: $gutter;
     img {
+        width: 100%;
+        height: auto;
         padding-bottom: 8px;
         transition: all ease 0.3s;
     }

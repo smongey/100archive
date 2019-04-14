@@ -1,5 +1,4 @@
-.archives {
-
+.archive {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 20vh 80px auto 20vh auto;
@@ -22,12 +21,19 @@
   .filter_container {
     grid-column: 1/ span 3;
     grid-row: 5;
-    padding-left: $gutter/2;
+    margin-bottom: $gutter;
   }
 
   .projects_container {
     grid-column: 1/ span 6;
     grid-row: 6;
   }
+
+}
+
+.archive_thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: $gutter;
 
 }

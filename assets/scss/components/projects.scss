@@ -1,30 +1,7 @@
-.project {
-
+.projects {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 20vh 105px auto 20vh auto;
-
-    .title {
-      grid-column: 4 / span 2;
-      grid-row: 2;
-    }
-
-    .text_two {
-      grid-column: 2 / span 1;
-      grid-row: 3;
-    }
-
-    .text_right {
-      grid-column: 4 / span 2;
-      grid-row: 3;
-    }
-
-    .images {
-      grid-column: 2 / span 5;
-      grid-row: 5;
-    }
+    grid-template-columns: repeat(4, 1fr);
 }
-
 
 
 // .projects {

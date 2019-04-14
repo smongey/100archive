@@ -13,12 +13,12 @@
 
 // default spacing and type styles for a section element
 section {
-    // padding: $gutter 0;
-    padding: $gutter/2 0;
+    padding: $gutter/2;
+
     // headers within sections
     header {
-        padding-left: $gutter/2;
-        padding-bottom: $gutter;
+        // padding-left: $gutter/2;
+        padding-bottom: $gutter/2;
         // all h4’s that are direct children of the header
         & > h4 {
             @extend .smallcaps;
@@ -79,4 +79,11 @@ section {
         flex-basis: calc(100% / 6);
         padding: 0 $gutter/2;
     }
+}
+
+// CSS Grid System
+
+// six column
+.6col {
+  grid-template-columns: repeat(6, 1fr);
 }
