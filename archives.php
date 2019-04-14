@@ -1,4 +1,4 @@
-<?php include('./components/_header.php'); ?>
+<?php $colorMode='black'; include('./components/_header.php'); ?>
 
     <section class="archives black">
 

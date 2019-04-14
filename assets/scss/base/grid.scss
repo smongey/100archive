@@ -13,7 +13,8 @@
 
 // default spacing and type styles for a section element
 section {
-    padding: $gutter 0;
+    // padding: $gutter 0;
+    padding: $gutter/2 0;
     // headers within sections
     header {
         padding-left: $gutter/2;

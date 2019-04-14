@@ -3,15 +3,20 @@
 .menu {
     position: fixed;
     z-index: 3;
-    right: $gutter;
+    right: $gutter/2;
     display: flex;
+    padding-top: $gutter/2;
+
+    &.black {
+      background: none;
+    }
 
     // Burger Icon
     &_burger {
         position: relative;
         display: inline-block;
         margin-left: $gutter/3;
-        margin-top: $gutter;
+
         a {
             position: relative;
             display: inline-block;
@@ -28,6 +33,10 @@
             top: 25%;
             left: 15%;
             transition: all ease 0.3s;
+
+            .black & {
+              background: $white;
+            }
         }
         span:nth-child(2) {
             top: 50%;
@@ -52,12 +61,12 @@
             }
         }
     }
-    
+
     // Search Icon
     &_search {
         position: relative;
         display: inline-block;
-        margin-top: $gutter;
+
         a {
             position: relative;
             display: inline-block;
@@ -65,6 +74,10 @@
             height: 30px;
             background: transparent url("../images/search.svg") center center no-repeat;
             text-indent: -9999px;
+
+            .black & {
+              background: transparent url("../images/search-white.svg") center center no-repeat;
+            }
         }
     }
 
@@ -149,7 +162,7 @@
         padding: $gutter*1.5 $gutter*2;
         transform: translateX(calc(100% + 1px));
         &.active {
-            
+
         }
     }
 

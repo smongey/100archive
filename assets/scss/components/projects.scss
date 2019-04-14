@@ -1,8 +1,8 @@
 .project {
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 80px auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20vh 105px auto 20vh auto;
 
     .title {
       grid-column: 4 / span 2;
@@ -21,7 +21,7 @@
 
     .images {
       grid-column: 2 / span 5;
-      grid-row: 4;
+      grid-row: 5;
     }
 }
 

@@ -1,6 +1,6 @@
 .strip {
   display: grid;
-  grid-template-columns: $gutter 1fr 1fr $gutter ;
+  grid-template-columns: $gutter/2 1fr 1fr $gutter/2 ;
   grid-template-rows: auto 200px;
   height: 400px;
 

@@ -1,7 +1,7 @@
 
 .nav {
-    @include wrap();
-    padding: 0 $gutter;
+    // @include wrap();
+    padding: $gutter/2;
     position: absolute;
     width: 100%;
     z-index: 1;
@@ -9,12 +9,12 @@
 
     &_logo {
         flex: 1;
-        padding: $gutter $gutter/2;
+        // padding: $gutter $gutter/2;
     }
 
     &_nav {
         flex: 1;
-        padding: $gutter $gutter/2;
+        // padding: $gutter $gutter/2;
         li {
             padding: 0 $gutter/2 0 0;
             display: inline-block;

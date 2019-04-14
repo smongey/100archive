@@ -1,4 +1,8 @@
-    <div class="menu">
+    <?php if ($colorMode == 'black'): ?>
+    	<div class="menu black">
+    <?php else: ?>
+    	<div class="menu">
+    <?php endif ?>
         <div class="menu_search">
             <a href="#">Search</a>
         </div>
@@ -17,7 +21,7 @@
             <li><?php $btnTitle='Join Us'; include('./components/_btn.php'); ?></li>
         </ul>
     </div>
-    
+
     <div class="menu_results">
         <input type="text" class="search" placeholder="search">
         <ul>

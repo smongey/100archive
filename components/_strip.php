@@ -7,8 +7,8 @@
         <div class="header smallcaps">
             <h5>Join</h5>
         </div>
-        <div class="content">
-            <p>Powered by the design community — your support allows us to keep building the 100 Archive project</p>
+        <div class="content text">
+            Powered by the design community — your support allows us to keep building the 100 Archive project
         </div>
     </section>
 
@@ -18,8 +18,8 @@
             <div class="header smallcaps">
                 <h5>Newsletter</h5>
             </div>
-            <div class="content">
-                <p>Sign up to get the inside track on the project, our latest articles and upcoming events!</p>
+            <div class="content text">
+                Sign up to get the inside track on the project, our latest articles and upcoming events!
             </div>
         </section>
 

@@ -1,5 +1,9 @@
-
+<?php if ($colorMode == 'black'): ?>
+	<header class="nav black">
+<?php else: ?>
 	<header class="nav">
+<?php endif ?>
+
         <div class="nav_logo">
         <?php include('./components/_logo.php'); ?>
         </div>
