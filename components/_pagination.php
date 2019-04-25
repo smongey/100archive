@@ -1,14 +1,14 @@
-    <section class="pagination">
+<section class="pagination">
     
     <div class="pagination_older">
-      <ul>
+      <ul class="inline">
         <li><a href="#">Older</a></li>
         <li><a href="#">Newer</a></li>
       </ul>
     </div>
     
     <div class="pagination_nav">
-      <ul>
+      <ul class="inline">
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
@@ -25,4 +25,4 @@
       <p>72 of 926</p>
     </div>
   
-  </section>
+</section>

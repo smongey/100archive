@@ -57,7 +57,8 @@ a {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    // max-width: 100%;
     height: auto;
     opacity: 1;
     transition: opacity ease 0.3s;

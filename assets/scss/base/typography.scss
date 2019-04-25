@@ -44,7 +44,7 @@
     font-family: $text;
     font-size: 16px;
     @include ip("font-size", $sm, 16px, $xl, 18px);
-    line-height: 1.4em;
+    line-height: 1.3em;
 }
 .smallcaps {
     letter-spacing: 1px;

@@ -1,46 +1,33 @@
+
+$indent: 15px;
+
 .thumb {
     position: relative;
     padding: $gutter;
     img {
-        padding-bottom: 8px;
+        padding-bottom: 10px;
         transition: all ease 0.3s;
     }
-    // *:last-child(3) {
-    //     padding-left: 15px;
-    // }
-    time,
-    h4,
-    h3,
-    p {
-        padding-bottom: 6px;
+    time, h4, h3, p, date {
+        padding-bottom: 12px;
         transition: all ease 0.3s;
     }
-    // time {
-    //     display: block;
-    //     // transition: all ease 0.3s;
-    // }
+
+    date {
+        display: block;
+    }
     .thumb_indent {
-        padding-left: 15px;
+        padding-left: $indent;
     }
     .thumb_doubleindent {
-        padding-left: 30px;
+        padding-left: $indent*2;
     }
-    // p {
-    //     padding-left: 30px;
-    //     transition: all ease 0.3s;
-    // }
     &:hover {
-        img {
-            // transform: scale(1.03) translatey(-4px);
+        .thumb_indent {
+            transform: translateX(-$indent);
         }
-        time {
-            // opacity: 0.5;
-        }
-        h3 {
-            transform: translateX(-15px);
-        }
-        p {
-            transform: translateX(-30px);
+        .thumb_doubleindent {
+            transform: translateX(-$indent*2);
         }
     }
 }

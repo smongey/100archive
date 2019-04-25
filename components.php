@@ -4,7 +4,7 @@
 
     <section class="black">
         <header>
-            <h4>Header Title&hellip;</h4>    
+            <h4>Header Title</h4>    
         </header>
         <div class="c4">
             <div>
@@ -30,12 +30,14 @@
 
     <section>
         <header>
-            <h4>Projects</h4>
-            <ul class="right">
-            <li>
-            <?php $btnTitle='+ Submit a Project'; include('./components/_btn.php'); ?>
-            </li>
-            <li><a href="#">View All</a></li>
+            <h4>
+                <a href="/projects.php">Projects</a>
+            </h4>
+            <ul class="subnav right inline">
+                <li>
+                <?php $btnTitle='+ Submit a Project'; include('./components/_btn.php'); ?>
+                </li>
+                <li><a class="" href="#">View All</a></li>
             </ul>
         </header>
         <div class="c4">

@@ -1,0 +1,20 @@
+.pagination {
+    @extend .flex;
+    flex-flow: row wrap;
+    &_older {
+        flex: 1;
+        text-align: left;
+    }
+    &_nav {
+        flex: 3;
+        text-align: center;
+        li {
+            padding: 0 5px;
+        }
+    }
+
+    &_key {
+        flex: 1;
+        text-align: right;
+    }
+}

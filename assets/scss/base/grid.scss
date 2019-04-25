@@ -13,13 +13,15 @@
 
 // default spacing and type styles for a section element
 section {
-    padding: $gutter;
+    padding: $gutter*.8 $gutter $gutter;
     // headers within sections
     header {
-        padding-left: $gutter/2;
-        padding-bottom: $gutter;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 $gutter/2 $gutter;
         // all h4’s that are direct children of the header
         & > h4 {
+            flex: 1;
             @extend .smallcaps;
         }
     }

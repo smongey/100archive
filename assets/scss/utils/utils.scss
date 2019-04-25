@@ -18,5 +18,12 @@
 }
 
 .right {
-    float: right;
+    // float: right;
+    
+}
+
+.inline {
+    & > * {
+        display: inline-block;
+    }
 }

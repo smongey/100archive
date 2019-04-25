@@ -6,6 +6,8 @@
     transition: all ease 0.3s;
 
     &-series {
+        text-transform: inherit;
+        letter-spacing: .5px;
         position: absolute;
         top: 0px;
     }

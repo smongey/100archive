@@ -27,7 +27,7 @@
             background: $black;
             top: 25%;
             left: 15%;
-            transition: all ease 0.3s;
+            transition: all $ease .3s;
         }
         span:nth-child(2) {
             top: 50%;
@@ -38,16 +38,20 @@
         &:hover {
             a {
                 span {
-                    height: 1px;
-                    transform: scaleX(1.2) scaleY(1);
+                    // height: 1px;
+                    // transform: scaleX(1.2) scaleY(1);
                 }
                 span:nth-child(2) {
-                    height: 1px;
-                    transform: scaleX(0.7);
+                    // height: 1px;
+                    // transform: scaleX(0.7);
+                }
+                span:first-child {
+                    top: 50%;
                 }
                 span:last-child {
-                    height: 1px;
-                    transform: scaleX(1.2) scaleY(1);
+                    top: 50%;
+                    // height: 1px;
+                    // transform: scaleX(1.2) scaleY(1);
                 }
             }
         }

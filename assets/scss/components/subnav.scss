@@ -1,0 +1,17 @@
+
+
+.subnav {
+
+    li {
+        display: inline-block;
+        list-style-type: none;
+        padding-right: 20px;
+        &:first-child {
+            padding-left: 0px;
+        }
+        &:last-child {
+            padding-right: 0px;
+        }
+    }
+
+}
