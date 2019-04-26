@@ -1,6 +1,6 @@
 <?php $colorMode='black'; include('./components/_header.php'); ?>
 
-    <section class="archive black">
+    <section class="archive black standard-grid">
 
       <div class="title">2017 Archive</div>
 

@@ -1,36 +1,3 @@
-.archive {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 20vh 80px auto 20vh auto;
-
-  .title {
-    grid-column: 4 / span 2;
-    grid-row: 2;
-  }
-
-  .text_two {
-    grid-column: 2 / span 1;
-    grid-row: 3;
-  }
-
-  .text_right {
-    grid-column: 4 / span 2;
-    grid-row: 3;
-  }
-
-  .filter_container {
-    grid-column: 1/ span 3;
-    grid-row: 5;
-    margin-bottom: $gutter;
-  }
-
-  .projects_container {
-    grid-column: 1/ span 6;
-    grid-row: 6;
-  }
-
-}
-
 .archive_thumbs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
