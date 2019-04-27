@@ -23,6 +23,36 @@
             </div>
         </section>
 
+<?php elseif($stripType == 'Past'): ?>
+
+        <section class="strip one past-archives black">
+            <div class="header smallcaps">
+                <h5>Past Archives</h5>
+            </div>
+            <div class="content-full">
+              <a href="#">
+                <div class="past-archive">
+                    2017
+                </div>
+              </a>
+              <a href="#">
+                <div class="past-archive">
+                    2016
+                </div>
+              </a>
+              <a href="#">
+                <div class="past-archive">
+                    2015
+                </div>
+              </a>
+              <a href="#">
+                <div class="past-archive">
+                    2014
+                </div>
+              </a>
+            </div>
+        </section>
+
 
 <?php else: ?>
 
