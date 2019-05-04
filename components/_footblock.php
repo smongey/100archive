@@ -1,4 +1,4 @@
-    <div class="footblock">
+    <div class="footblock <?php echo $color; ?>">
       <a href="#">
         <header>
           <h5><?php echo $footblockTitle; ?></h5>

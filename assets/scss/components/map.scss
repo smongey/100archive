@@ -1,0 +1,13 @@
+.map {
+    background: $peach;
+    height: 60vh;
+    position: relative;
+    margin-bottom: $gutter;
+    
+    h1 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

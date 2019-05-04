@@ -1,0 +1,61 @@
+.strip {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    header {
+        @extend .pad;
+        & > * {
+            @extend .smallcaps;
+        }
+    }
+    &_content {
+        padding-top: $gutter*1.25;
+        white-space: nowrap;
+        li {
+            display: inline-block;
+            // padding-right: $gutter/2;
+            a {
+                padding-right: $gutter/2;
+                @extend .striptype;
+            }
+        }
+    }
+    &-join {
+        background: $leaf;
+        header > * {
+            color: $green;
+        }
+        a {
+            color: $green;
+            @extend .trans;
+            &:hover {
+                color: $black;
+            }
+        }
+
+    }
+    &-archive {
+        background: $black;
+        header > * {
+            color: $white;
+        }
+        a {
+            color: $white;
+            @extend .trans;
+            &:hover {
+                color: $peach;
+            }
+        }
+    }
+}
+
+.marquee3k {
+    overflow: hidden;
+    // transition: all ease .4s;
+    // filter: blur(2px);
+    &:hover {
+        // filter: invert(3);
+        cursor: pointer;
+        // padding: 5px 0;
+    }
+}

@@ -75,18 +75,46 @@
     <?php $stackType='stack-full'; include('./components/_stack.php'); ?>
    
     <?php include('./components/_map.php'); ?>
-  
-    <?php include('./components/_form.php'); ?>
-  
+    
+    <div class="text c2">
+        <div></div>
+        <div>
+            <h3>Become a Member</h3>
+            <?php include('./components/_form.php'); ?>
+        </div>
+    </div>
+    
     <?php $stripType="Join"; include('./components/_strip.php'); ?>
-
     <?php $stripType="Past"; include('./components/_strip.php'); ?>
 
-
     <div class="c2">
-        <?php $footblockTitle='Newsletter'; include('./components/_footblock.php'); ?>    
-        <?php $footblockTitle='Launch'; include('./components/_footblock.php'); ?>
+        <?php $color= "lightgrey"; $footblockTitle='Newsletter'; include('./components/_footblock.php'); ?>    
+        <?php $color= "green"; $footblockTitle='Launch'; include('./components/_footblock.php'); ?>
     </div>
   
+    <div class="c2">
+        <?php $color= "midgrey"; $footblockTitle='Join Us'; include('./components/_footblock.php'); ?>    
+        <?php $color= "peach"; $footblockTitle='Upgrade'; ?>
+    
+        <div class="footblock <?php echo $color; ?>">
+            <a href="#">
+                <header>
+                <h5><?php echo $footblockTitle; ?></h5>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita recusandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita recusandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita recusandae consequuntur nam quaerat enim, consequatur assumenda deserunt ullam, sequi, sit quibusdam natus dolore eos sed! Perferendis magnam at incidunt?</p>
+            </a>
+        </div>
+    
+    </div>
+  
+    <div class="c2">
+        <?php $color= "sky"; $footblockTitle='Join Us'; include('./components/_footblock.php'); ?>    
+        <?php $color= "purple"; $footblockTitle='Upgrade'; include('./components/_footblock.php'); ?>
+    </div>
+
+    <div class="c2">
+        <?php $color= "flesh"; $footblockTitle='Join Us'; include('./components/_footblock.php'); ?>    
+        <?php $color= "mint"; $footblockTitle='Upgrade'; include('./components/_footblock.php'); ?>
+    </div>
 
 <?php include('components/_footer.php'); ?>

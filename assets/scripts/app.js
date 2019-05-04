@@ -1,5 +1,6 @@
 // Interactions
 $(document)
+    .ready(init)
     .on("mouseenter", ".stack ul li", showCaption)
     .on("click", ".burger", showMenu)
     .on("click", ".dropdown button", toggleDropdown)
@@ -13,6 +14,17 @@ var images = ["stack_one", "stack_two", "stack_three"];
 function l(m) {
     console.log(m);
 }
+
+function init(e) {
+    console.log(e);
+    // Marquee3k.init();
+    setTimeout(function () {
+        Marquee3k.init();
+    }, 200);
+}
+
+// Marquee3k.init();
+
 
 // Remember where we are in the array, start just before the first entry
 function cycleClasses(el) {

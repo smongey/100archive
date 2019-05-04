@@ -1,0 +1,88 @@
+.form {
+    position: relative;
+    padding: $gutter/2 0;
+    & > div:not(.c2) {
+        margin-bottom: $gutter;
+    }
+    .c2 {
+        width: inherit !important;
+    }
+    input[type="text"] {
+        width: 50%;
+        outline: none;
+        padding-bottom: 4px;
+        margin-bottom: $gutter/2;
+        &::placeholder {
+            transition: all ease .2s;
+        }
+        &:focus {
+            outline: none;
+            &::placeholder {
+                opacity: .1;
+            }
+        }
+    }
+
+    .checkbox-wrap, .radio-wrap {
+        position: relative;
+        label {
+            display: flex;
+            position: relative;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            margin-left: 25px;
+            width: 50%;
+        }
+        label:before, label:after {
+            pointer-events: none;
+            outline: none;
+        }
+        label:before {
+            position: absolute;
+            content: ' ';
+            top: 6px;
+            left: -25px;
+            height: 10px;
+            width: 10px;
+            border: 1px solid $black;
+            // background: red;
+            margin-right: 15px;
+        }
+        label:after {
+            position: absolute;
+            top: 7px;
+            left: -24px;
+            width: 10px;
+            height: 10px;
+            display: flex;
+            content: ' ';
+            background: $black;
+            transform: scaleX(0);
+            transform-origin: 0 0;
+            transition: all $ease .15s;
+        }
+        input[type="checkbox"]:checked + label:after, 
+        input[type="radio"]:checked + label:after {
+            transform: scaleX(1);
+        }
+    }
+    input[type="checkbox"], input[type="radio"]{
+        position: absolute;
+        outline: none;
+        left: 0px;
+        left: 0px;
+        height: 20px;
+        width: 20px;
+        -webkit-appearance: none;
+    }
+    &_perks {
+        a {
+            margin-bottom: 20px;
+        }
+        li {
+            opacity: .5;
+            margin-bottom: 20px;
+        }
+    }
+}

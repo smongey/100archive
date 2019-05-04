@@ -8,7 +8,17 @@ $darkgrey: #c4c4c4;
 $lightgrey: #f3f3f3;
 $white: rgba(255, 255, 255, 1); // white
 
+// Expanded Palette
+$leaf: #D4ECE9;
+$green: #31C95B;
 $peach: #F6D3B3;
+$midgrey: #949494;
+$sky: #D4ECE9;
+$purple: #BF80FF; 
+$flesh: #FFB8C9;
+$mint: #AAFFC2;
+
+
 
 // Media Query Breakpoints
 $xs: 480px;
@@ -23,6 +33,7 @@ $custom1: "Deckard";
 
 $text: #{$custom1}, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $display: #{$custom1}, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$thin: "Deckard Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Spacing
 

@@ -1,14 +1,23 @@
 "use strict";
 
 // Interactions
-$(document).on("mouseenter", ".stack ul li", showCaption).on("click", ".burger", showMenu).on("click", ".dropdown button", toggleDropdown).on("click", ".nav_menu_close", hideMenu).on("mouseenter", ".accordion > div", toggleAccordion); // .on("mouseleave", ".accordion > div", toggleAccordion);
+$(document).ready(init).on("mouseenter", ".stack ul li", showCaption).on("click", ".burger", showMenu).on("click", ".dropdown button", toggleDropdown).on("click", ".nav_menu_close", hideMenu).on("mouseenter", ".accordion > div", toggleAccordion); // .on("mouseleave", ".accordion > div", toggleAccordion);
 // Array of classes to cycle through
 
 var images = ["stack_one", "stack_two", "stack_three"];
 
 function l(m) {
   console.log(m);
-} // Remember where we are in the array, start just before the first entry
+}
+
+function init(e) {
+  console.log(e); // Marquee3k.init();
+
+  setTimeout(function () {
+    Marquee3k.init();
+  }, 200);
+} // Marquee3k.init();
+// Remember where we are in the array, start just before the first entry
 
 
 function cycleClasses(el) {

@@ -3,7 +3,7 @@ $offset: 36.5%;
 $half: $gutter*0.5;
 
 .text {
-
+    overflow-y: hidden;
     .c2, .c3, .c21, .c12 {
         padding-bottom: $half;
         width: calc(100% + #{$gutter});

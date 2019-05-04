@@ -16,6 +16,7 @@
 
 <!-- <script src=""></script> all.js – plugins etc -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marquee3000@1.0.8/marquee3k-noUMD.min.js"></script>
 <script src="assets/build/app.js"></script> <!-- app.js -->
 
 <!-- <script id="IntercomSettingsScriptTag">

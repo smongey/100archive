@@ -103,11 +103,13 @@
         overflow: hidden;
         li {
             transition: all $ease .3s;
+            // padding-left: 0px;
         }
         @for $i from 1 through 10 {
             li:nth-child(#{$i}) {
                 transform: translateY(-130% * $i);
                 transition-delay: 0.05s * $i;
+                padding-left: 0px;
             }
         }
         &.active {

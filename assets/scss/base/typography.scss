@@ -7,6 +7,12 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Deckard Thin';
+    src: url(/assets/fonts/Deckard-Thin.woff) format("woff");
+    font-weight: 50;
+    font-style: normal;
+}
 
 
 // Paragraph Styles
@@ -58,12 +64,21 @@
     text-transform: uppercase;
 }
 
+.striptype {
+    font-family: $thin;
+    line-height: 1em;
+    @include ip(font-size, $sm, 100px, $xl, 150px);
+    @include sm {
+        letter-spacing: -7px;
+    }
+}
+
 
 
 // Defaults
 // Base Default Type
 // makes everything just plain small text. Style type accordingly after this.
-h1,h2,h3,h4,h5,h6,a,p,li,span,button,input,textarea {
+h1,h2,h3,h4,h5,h6,a,p,li,span,button,input,label,textarea {
     @extend .body;
 }
 

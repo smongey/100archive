@@ -1,15 +1,21 @@
 .accordion {
     @extend .pad;
-    padding-left: calc(50% + #{$gutter/2});
+    padding-bottom: $gutter;
+    @include sm {
+        padding-left: calc(50% + #{$gutter/2});
+    }
     & > div {
         @extend .trans;
-        height: 70px;
+        height: $gutter*1.5;
+        @include sm {
+            height: $gutter*1.2;
+        }
         overflow: hidden;
         cursor: pointer;
         header {
             a {
                 padding: $gutter*.5;
-                padding-top: $gutter*.45;
+                padding-top: $gutter*.35;
                 display: flex;
                 justify-content: space-between;
             }

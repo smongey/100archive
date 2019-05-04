@@ -34,3 +34,42 @@
 .trans {
     transition: all $ease .4s;
 }
+
+.inline {
+    & > * {
+        margin-right: $gutter/2;
+    }
+}
+
+
+.leaf {
+    background: $leaf;
+}
+
+.green {
+    background: $green;
+}
+
+.peach {
+    background: $peach;
+}
+
+.midgrey {
+    background: $midgrey;
+}
+
+.sky {
+    background: $sky;
+}
+
+.purple {
+    background: $purple;
+}
+
+.flesh {
+    background: $flesh;
+}
+
+.mint {
+    background: $mint;
+}

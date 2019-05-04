@@ -1,0 +1,36 @@
+// $footspace: $gutter*.5
+$top: $gutter*.9;
+
+.footblock {
+    @extend .trans;
+    h5, p {
+        @extend .trans;
+    }
+    &:nth-child(2) {
+        // background:red !important;
+        a {
+            padding: $top $gutter $top $gutter*.5;
+        }
+    }
+    a {
+        padding: $top $gutter $top $gutter;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        // align-items: flex-end;
+        height: 100%;
+        @extend .trans;
+        header {
+            @extend .smallcaps;
+            padding-bottom: $gutter*3;
+        }
+    }
+    &:hover {
+        background: $black;
+        a {
+            h5, p {
+                color: $peach;
+            }
+        }
+    }
+}
