@@ -1,0 +1,48 @@
+.accordion {
+    @extend .pad;
+    padding-left: calc(50% + #{$gutter/2});
+    & > div {
+        @extend .trans;
+        height: 70px;
+        overflow: hidden;
+        cursor: pointer;
+        header {
+            a {
+                padding: $gutter*.5;
+                padding-top: $gutter*.45;
+                display: flex;
+                justify-content: space-between;
+            }
+            h4 {
+                @extend .smallcaps;
+            }
+        }
+        & > div {
+            position: relative;
+            padding: $gutter/2;
+        }
+        @for $i from 0 through 10 {
+            &:nth-child(#{$i}) {
+                $opac: 7% * $i;
+                background: darken($white, $opac);
+                // padding-left: $i + 25p;
+                z-index: $i;
+                &:hover {
+                    background: $peach;
+                }
+            }
+        }
+    }
+    li {
+        list-style-type: none;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        &:before {
+            content: '–';
+            position: absolute;
+            // left: 0px;
+            margin-left: -20px;
+
+        }
+    }
+}

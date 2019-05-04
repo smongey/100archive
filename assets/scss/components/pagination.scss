@@ -1,5 +1,5 @@
 .pagination {
-    @extend .flex;
+    @extend .flex, .pad;
     flex-flow: row wrap;
     &_older {
         flex: 1;

@@ -1,0 +1,127 @@
+.filter {
+    @extend .flex;
+    padding-right: $gutter*.5;
+    & > div, & > .dropdown {
+        flex: 1;
+        padding-right: $gutter;
+        &:last-child {
+            padding-right: 0px;
+        }
+    }
+
+    .search {
+        position: relative;
+        &:before {
+            display: block;
+            content: '';
+            right: 4px;
+            top: 5px;
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            // background: red;
+            border: 1px solid $black;
+        }
+        &:after {
+            display: block;
+            content: '';
+            right: 2px;
+            top: 12px;
+            position: absolute;
+            width: 1px;
+            height: 7px;
+            border-left: 1px solid $black;
+            transform: rotate(-45deg);
+        }
+        input {
+            width: 100%;
+            padding-bottom: 7px;
+            
+            &::placeholder {
+                transition: all ease .2s;
+            }
+            &:focus {
+                outline: none;
+                &::placeholder {
+                    opacity: .1;
+                }
+            }
+        }
+    }
+
+}
+
+
+.dropdown {
+    position: relative;
+    & > button {
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid $black;
+        text-align: left;
+        padding-bottom: 7px;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            cursor: pointer;
+            &:after {
+                opacity: .5;   
+            }
+        }
+        &:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            right: 0px;
+            display: block;
+            position: absolute;
+            right: 2px;
+            top: 6px;
+            transform: rotate(-45deg);
+            border-left: 1px solid $black;
+            border-bottom: 1px solid $black;
+            transform-origin: 50% 50%;
+            transition: all $ease .3s;
+        }
+
+        &.active {
+            &:after {
+                transform: rotate(135deg);
+            }
+        }
+    }
+
+    &_list {
+        position: absolute;
+        padding-top: 7px;
+        width: calc(100% - #{$gutter});
+        opacity: 1;
+        transition: all $ease .3s;
+        pointer-events: none;
+        overflow: hidden;
+        li {
+            transition: all $ease .3s;
+        }
+        @for $i from 1 through 10 {
+            li:nth-child(#{$i}) {
+                transform: translateY(-130% * $i);
+                transition-delay: 0.05s * $i;
+            }
+        }
+        &.active {
+            pointer-events: auto;
+            li:hover {
+                padding-left: 5px;
+                cursor: pointer;
+            }
+            @for $i from 1 through 10 {
+                li:nth-child(#{$i}) {
+                    transform: translateY(0px * $i);
+                }
+            }
+        }
+        
+    }
+}

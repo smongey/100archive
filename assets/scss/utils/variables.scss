@@ -8,6 +8,8 @@ $darkgrey: #c4c4c4;
 $lightgrey: #f3f3f3;
 $white: rgba(255, 255, 255, 1); // white
 
+$peach: #F6D3B3;
+
 // Media Query Breakpoints
 $xs: 480px;
 $sm: 768px;
@@ -25,6 +27,8 @@ $display: #{$custom1}, "Helvetica Neue", Helvetica, Arial, sans-serif;
 // Spacing
 
 $gutter: 4vw;
+
+$indent: 15px;
 
 
 // Animation / Interpolation

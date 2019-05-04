@@ -1,0 +1,18 @@
+.archive {
+    position: relative;
+    @extend .pad;
+
+    & > h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // @extend .superdisplay;
+        font-size: 300px;
+        font-weight: 100;
+        color: $white;
+        font-weight: 100;
+
+    }
+
+}

@@ -1,5 +1,4 @@
 
-$indent: 15px;
 
 .thumb {
     position: relative;
@@ -9,7 +8,7 @@ $indent: 15px;
         transition: all ease 0.3s;
     }
     time, h4, h3, p, date {
-        padding-bottom: 12px;
+        padding-bottom: 10px;
         transition: all ease 0.3s;
     }
 
@@ -17,10 +16,10 @@ $indent: 15px;
         display: block;
     }
     .thumb_indent {
-        padding-left: $indent;
+        @extend .indent;
     }
     .thumb_doubleindent {
-        padding-left: $indent*2;
+        @extend .doubleindent;
     }
     &:hover {
         .thumb_indent {

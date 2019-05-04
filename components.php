@@ -30,14 +30,12 @@
 
     <section>
         <header>
-            <h4>
-                <a href="/projects.php">Projects</a>
-            </h4>
+            <h4>Projects</h4>
             <ul class="subnav right inline">
                 <li>
                 <?php $btnTitle='+ Submit a Project'; include('./components/_btn.php'); ?>
                 </li>
-                <li><a class="" href="#">View All</a></li>
+                <li><a class="/projects.php" href="#">View All</a></li>
             </ul>
         </header>
         <div class="c4">
@@ -57,12 +55,12 @@
 
     <?php include('./components/_subnav.php'); ?>
 
-    <section>
+    <section class="subnav">
         <?php include('./components/_filter.php'); ?>
         <a href="#" class="enter">Enter a Project</a>
     </section>
   
-    <?php include('./components/_title.php'); ?>
+    <?php // include('./components/_title.php'); ?>
     
     <?php include('./components/_text.php'); ?>
 

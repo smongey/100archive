@@ -10,7 +10,7 @@
 //             display: inline-block;
 //             padding-left: $gutter;
 //             a {
-//                 @extend .text, .smallcaps;
+//                 @extend .body, .smallcaps;
 //             }
 //         }
 //     }
@@ -24,7 +24,7 @@
 
 //     &_project {
 //         h3 {
-//             @extend .text;
+//             @extend .body;
 //         }
 //         img {
 //             padding-bottom: 6px;

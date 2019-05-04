@@ -1,0 +1,33 @@
+.atoz {
+    padding: 0 $gutter*1.5;
+    &_nav {
+
+        padding-bottom: $gutter*.5;
+        padding-left: calc(50% + #{$gutter/2});
+        h5 {
+            padding-bottom: 8px;
+        }
+        li {
+            display: inline-block;
+            padding-right: 15px;
+        }
+        a {
+            opacity: .5;
+            transition: all $ease .3s;
+            &:hover, &.active {
+                opacity: 1;
+            }
+        }
+    }
+
+    &_list {
+        ul {
+            width: 100%;
+            column-count: 6;
+            column-gap: $gutter;
+        }
+        li {
+            list-style-type: none;
+        }
+    }
+}

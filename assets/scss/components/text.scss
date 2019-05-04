@@ -1,0 +1,92 @@
+
+$offset: 36.5%;
+$half: $gutter*0.5;
+
+.text {
+
+    .c2, .c3, .c21, .c12 {
+        padding-bottom: $half;
+        width: calc(100% + #{$gutter});
+        & > div {
+            padding: 0px;
+            padding-right: $gutter;
+        }
+        img {
+            padding-right: $half;
+        }
+    }
+
+    // .c2 > div {
+    //     background: darkcyan;
+    // }
+    
+
+    // .c3 > div {
+    //     background: blue;
+    // }
+
+    // .c21 > div {
+    //     background: salmon;
+    // }
+
+    // .c12 > div {
+    //     background: lavenderblush;
+    // }
+
+    p {
+        padding-right: $gutter*1.3;
+        margin-bottom: $half;
+    }
+
+    h1 {
+        @extend .display;
+        margin-bottom: $gutter;
+    }
+
+    h2, h3, h4 {
+        @extend .largetext;
+        margin-bottom: $half;
+    }
+
+    h6 {
+        margin-bottom: $gutter*.3;
+    }
+
+    .hero {
+        width: calc(100% + #{$offset});
+        margin-left: -($offset);
+        margin-bottom: $gutter*.8;
+    }
+
+    figure {
+        position: relative;
+        margin-bottom: $gutter*0.8;
+        figcaption {
+            position: absolute;
+            padding-right: $half;
+            top: 0px;
+            left: 0px;
+            transform: translateX(-100%);
+            display: block;
+            width: $offset;
+            @extend .smalltext;
+            // background: red;
+        }
+    }
+
+    .bullets {
+        position: relative;
+        margin-bottom: $half;
+        li {
+            padding-left: $half;
+            margin-bottom: $gutter*0.1;
+            &:before {
+                content: '-';
+                position: absolute;
+                left: 0px;
+            }
+            
+        }
+        
+    }
+}

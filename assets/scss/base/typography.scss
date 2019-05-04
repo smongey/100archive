@@ -40,12 +40,19 @@
     line-height: 1.25em;
     font-weight: 400;
 }
-.text {
+.body {
     font-family: $text;
     font-size: 16px;
     @include ip("font-size", $sm, 16px, $xl, 18px);
     line-height: 1.3em;
 }
+.smalltext {
+    font-family: $text;
+    font-size: 13px;
+    @include ip("font-size", $sm, 13px, $xl, 16px);
+    line-height: 1.3em;
+}
+
 .smallcaps {
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -56,8 +63,8 @@
 // Defaults
 // Base Default Type
 // makes everything just plain small text. Style type accordingly after this.
-h1,h2,h3,h4,h5,h6,a,p,li,span {
-    @extend .text;
+h1,h2,h3,h4,h5,h6,a,p,li,span,button,input,textarea {
+    @extend .body;
 }
 
 input[type="text"] {

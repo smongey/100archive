@@ -33,6 +33,11 @@ section {
     }
 }
 
+.pad {
+    padding-left: $gutter*1.5;
+    padding-right: $gutter*1.5;
+}
+
 // flex so I’m not repeating myself below
 .flex {
     display: flex;
@@ -80,4 +85,37 @@ section {
         flex-basis: calc(100% / 6);
         padding: 0 $gutter/2;
     }
+}
+
+// split column (2 to 1)
+.c21 {
+    @extend .flex;
+    // divs that are direct children of .c2 (same for each)
+    & > div {
+        padding: 0 $gutter/2;
+        &:first-child {
+            flex-basis: calc(100% / 3 * 2);
+        }
+        &:last-child {
+            flex-basis: calc(100% / 3);
+        }
+        
+    }
+}
+
+
+// split column (1 to 2)
+.c12 {
+    @extend .flex;
+    // divs that are direct children of .c2 (same for each)
+    & > div {
+        padding: 0 $gutter/2;
+        &:last-child {
+            flex-basis: calc(100% / 3 * 2);
+        }
+        &:first-child {
+            flex-basis: calc(100% / 3);
+        }   
+    }
+
 }

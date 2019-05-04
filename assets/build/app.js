@@ -1,7 +1,15 @@
 "use strict";
 
+// Interactions
+$(document).on("mouseenter", ".stack ul li", showCaption).on("click", ".burger", showMenu).on("click", ".dropdown button", toggleDropdown).on("click", ".nav_menu_close", hideMenu).on("mouseenter", ".accordion > div", toggleAccordion); // .on("mouseleave", ".accordion > div", toggleAccordion);
 // Array of classes to cycle through
-var images = ["stack_one", "stack_two", "stack_three"]; // Remember where we are in the array, start just before the first entry
+
+var images = ["stack_one", "stack_two", "stack_three"];
+
+function l(m) {
+  console.log(m);
+} // Remember where we are in the array, start just before the first entry
+
 
 function cycleClasses(el) {
   console.log();
@@ -21,8 +29,7 @@ setInterval(function () {
   cycleClasses($(".stack ul li:first-child"));
   cycleClasses($(".stack ul li:nth-child(2)"));
   cycleClasses($(".stack ul li:last-child"));
-}, 5000);
-$(document).on("mouseenter", ".stack ul li", showCaption).on("click", ".burger", showMenu).on("click", ".nav_menu_close", hideMenu); // show hovered image caption
+}, 5000); // show hovered image caption
 
 function showCaption(event) {
   event.preventDefault();
@@ -37,6 +44,29 @@ function showMenu(event) {
 function hideMenu(event) {
   event.preventDefault();
   $(".nav_menu").removeClass("active");
+}
+
+function toggleDropdown(event) {
+  event.preventDefault();
+  l("dropdown");
+  var $butt = $(this);
+  var $dd = $(this).next();
+
+  if (!$dd.hasClass("active")) {
+    $dd.addClass("active");
+    $butt.addClass("active");
+  } else {
+    $dd.removeClass("active");
+    $butt.removeClass("active");
+  }
+}
+
+function toggleAccordion(e) {
+  e.preventDefault();
+  var $newH = $(this).children()[0].offsetHeight + $(this).children()[1].offsetHeight;
+  console.log($newH);
+  $('.accordion > div').css('height', '');
+  $(this).css('height', $newH);
 } // const showCaption = () => {
 //     console.log($(this).data("caption"));
 // };

@@ -1,6 +1,6 @@
 
 .nav {
-    @include wrap();
+    @extend .pad;
     padding: 0 $gutter;
     position: absolute;
     width: 100%;
@@ -21,4 +21,3 @@
         }
     }   
 }
-
